@@ -18,9 +18,9 @@
         - "{{ db_volume }}:/var/lib/mysql"
       restart: true
       env:
-        MYSQL_ROOT_PASSWORD: password
+        MYSQL_ROOT_PASSWORD: test
         MYSQL_DATABASE: test
-        MYSQL_USER: wordpress
-        MYSQL_PASSWORD: wordpress
+        MYSQL_USER: test
+        MYSQL_PASSWORD: test
       ports:
         - "33306:3306"
