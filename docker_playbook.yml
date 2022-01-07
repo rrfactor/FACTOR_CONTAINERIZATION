@@ -1,22 +1,14 @@
 ---
-- hosts: all
+- name: Running MYSQL Database as Docker Container using Ansible.
+  hosts: all
   remote_user: rynrssl
+
 
   vars:
     db_volume: db_data
     
+    
   tasks:
-  
-  - name: Launch nginx web server database container
-    docker container:
-      name: webserver
-      image: nginx:alpine
-      volumes:
-        - "/full_path/volumes/nginx/data:/usr/share/nginx/html"
-      restart: unless-stopped
-      ports:
-        - "80:80"
-        - "443:443"
 
   - name: Launch mysql database container
     docker_container:
