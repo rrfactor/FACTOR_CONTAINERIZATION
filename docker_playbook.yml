@@ -1,7 +1,7 @@
 ---
 - name: Running MYSQL Database as Docker Container using Ansible.
   hosts: all
-  remote_user: rynrssl
+  become: true
 
 
   vars:
