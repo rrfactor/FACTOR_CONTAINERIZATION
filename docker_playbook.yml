@@ -1,12 +1,9 @@
 ---
-- name: Running MYSQL Database as Docker Container using Ansible.
-  hosts: testservers
-  remote_user: jvtaylar
-
+- hosts: all
+  remote_user: rynrssl
 
   vars:
     db_volume: db_data
-    
     
   tasks:
   
