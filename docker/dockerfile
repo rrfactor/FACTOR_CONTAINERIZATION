@@ -1,0 +1,11 @@
+FROM ubuntu
+MAINTAINER rynrssl
+
+#SKIP PROMPTS
+ARG DEBIAN_FRONTEND=noninteractive
+
+#UPDATE PACKAGES
+RUN apt update; apt dist-upgrade -y
+
+#INSTALL PACKAGES
+RUN apt install -y nginx mysql-server
